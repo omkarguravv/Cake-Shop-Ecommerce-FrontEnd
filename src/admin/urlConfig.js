@@ -1,0 +1,1 @@
+export const api = 'https://wowcakes.herokuapp.com/api/';
