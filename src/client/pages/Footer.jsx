@@ -6,7 +6,7 @@ import { BsFacebook, BsInstagram, BsTwitter } from 'react-icons/bs'
 function Footer() {
   return (
     <>
-    <div className='h-96 p-20 '>
+    <div className='h-96 md:p-20 '>
 
       <footer name="contact" class="bg-gradient-to-r from-gray-100 to-gray-100 pt-5 pb-2  ">
         <div class="container mx-auto px-4">
