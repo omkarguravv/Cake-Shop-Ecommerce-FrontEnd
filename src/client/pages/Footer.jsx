@@ -31,7 +31,7 @@ function Footer() {
                   <span class="block uppercase text-blueGray-500 font-semibold mb-2 text-2xl">Useful Links</span>
                   <ul class="list-unstyled">
                     <li>
-                      <a class="text-blueGray-600 hover:opacity-25 font- block pb-2 text-l" href="http://localhost:3000/signup">Singnup</a>
+                      <a class="text-blueGray-600 hover:opacity-25 font- block pb-2 text-l" href="/signup">Singnup</a>
                     </li>
                     <li>
                       <a class="text-blueGray-600 hover:opacity-25 font- block pb-2 text-l" href="/">Service</a>
