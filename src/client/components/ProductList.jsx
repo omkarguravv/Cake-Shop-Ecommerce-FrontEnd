@@ -33,7 +33,7 @@ function ProductList() {
                 <div className='w-full pt-32    bg-[#FFFFF] '>
                     <div className='items-center  mx-auto flex flex-col justify-center w-full h-full '>
 
-                        <div className='   grid grid-cols-4 justify-center gap-3  gap-x-10  '>
+                        <div className='   grid grid-col-1 md:grid-cols-4 justify-center gap-3  gap-x-10  '>
                             {cakes.map((cakeItem) => {
                                 return (
                                     <CakeCard
