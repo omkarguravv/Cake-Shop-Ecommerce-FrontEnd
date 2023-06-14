@@ -8,7 +8,7 @@ export const User = () => {
 
   const [user, setUser] = useState([])
   useEffect(() => {
-    axios.get(`https://wowcakes.herokuapp.com/api/admin/get`)
+    axios.get(`https://wowcakebackend.onrender.com/api/admin/get`)
       .then(res => {
         // console.log(res.data);
         setUser(res.data.user)

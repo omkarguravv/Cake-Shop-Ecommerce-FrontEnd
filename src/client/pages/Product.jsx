@@ -7,7 +7,7 @@ function Product() {
     const [cakes, setCakes] = useState([])
 
     useEffect(() => {
-        axios.get('https://wowcakes.herokuapp.com/api/product/get')
+        axios.get('https://wowcakebackend.onrender.com/api/product/get')
             .then(res => {
                 console.log(res.data);
                 setCakes(res.data.products)

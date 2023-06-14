@@ -8,7 +8,7 @@ const Orders = () => {
 
   const [order, setOrder] = useState([])
   useEffect(() => {
-    axios.get(`https://wowcakes.herokuapp.com/api/order/get`)
+    axios.get(`https://wowcakebackend.onrender.com/api/order/get`)
       .then(res => {
         // console.log(res.data);
         setOrder(res.data.order)

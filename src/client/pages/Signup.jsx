@@ -16,7 +16,7 @@ export const Signup = () => {
     async function registerUser(e) {
         e.preventDefault()
 
-        const res = await fetch("https://wowcakes.herokuapp.com/api/signup", {
+        const res = await fetch("https://wowcakebackend.onrender.com/api/signup", {
             method: 'POST',
             headers: {
                 'Content-Type': "application/json",

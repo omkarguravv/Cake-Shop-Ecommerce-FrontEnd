@@ -15,7 +15,7 @@ export const AdminSignin = () => {
     async function LogInUser(e) {
         e.preventDefault()
         try {
-            const result = await fetch("https://wowcakes.herokuapp.com/api/admin/signin", {
+            const result = await fetch("https://wowcakebackend.onrender.com/api/admin/signin", {
                 method: 'POST',
                 headers: {
                     'Content-Type': "application/json",

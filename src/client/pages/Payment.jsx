@@ -26,7 +26,7 @@ function Payment(price) {
             order_id: data.id,
             handler: async (response) => {
                 try {
-                    const verifyUrl = "https://wowcakes.herokuapp.com/api/payment/paymentVerify";
+                    const verifyUrl = "https://wowcakebackend.onrender.com/api/payment/paymentVerify";
                     const data = await axios.post(verifyUrl, response);
                     console.log(data.path);
                     navigate(data.data.path)
@@ -60,7 +60,7 @@ function Payment(price) {
     
             try {
                 
-                const orderUrl = "https://wowcakes.herokuapp.com/api/payment/order";
+                const orderUrl = "https://wowcakebackend.onrender.com/api/payment/order";
                 const { data } = await axios.post(orderUrl, { amount: myOrder.amount });
                 console.log(data);
                 initPayment(data.data);

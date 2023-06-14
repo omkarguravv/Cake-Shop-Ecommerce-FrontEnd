@@ -20,7 +20,7 @@ function ProductDetail() {
     const product = id
     const navigate = useNavigate();
     useEffect(() => {
-        axios.get(`https://wowcakes.herokuapp.com/api/product/${id}`)
+        axios.get(`https://wowcakebackend.onrender.com/api/product/${id}`)
             .then(res => {
                 // console.log(res.data);
                 // console.log(res.data.pro);
@@ -35,7 +35,7 @@ function ProductDetail() {
     }, [])
 
     const order = () => {
-        axios.post('https://wowcakes.herokuapp.com/api/order', {
+        axios.post('https://wowcakebackend.onrender.com/api/order', {
             nameonCake, qty, price, address, user_id, product
         }).then(data => {
             console.log(data)

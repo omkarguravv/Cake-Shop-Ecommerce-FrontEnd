@@ -10,7 +10,7 @@ function FlavourListing() {
     const { flavour } = useParams();
     const [cakes, setCakes] = useState([])
     useEffect(() => {
-        axios.get(`https://wowcakes.herokuapp.com/api/product/get/${flavour}`)
+        axios.get(`https://wowcakebackend.onrender.com/api/product/get/${flavour}`)
             .then(res => {
                 // console.log(res.data);
                 setCakes(res.data.products)

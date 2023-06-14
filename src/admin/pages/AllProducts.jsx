@@ -8,7 +8,7 @@ function AllProducts() {
 
     const [product, setProduct] = useState([])
     useEffect(() => {
-        axios.get(`https://wowcakes.herokuapp.com/api/product/get`)
+        axios.get(`https://wowcakebackend.onrender.com/api/product/get`)
             .then(res => {
                 // console.log(res.data);
                 setProduct(res.data.products)

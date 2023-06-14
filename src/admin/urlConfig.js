@@ -1,1 +1,1 @@
-export const api = 'https://wowcakes.herokuapp.com/api/';
+export const api = 'https://wowcakebackend.onrender.com/api/';
